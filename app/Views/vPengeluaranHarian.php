@@ -22,7 +22,7 @@
               <div class="card-header">
                 <h3 class="card-title">
                 <i class="fas fa-shopping-cart me-3"></i>
-                  Penjualan Bulan ini
+                  Pengeluaran Hari ini
                 </h3>
                 <div class="card-tools">
                   <ul class="nav nav-pills ml-auto">
@@ -39,7 +39,7 @@
                         <thead>
                             <tr>
                             <th scope="col">No</th>
-                            <th scope="col">Nama Kue</th>
+                            <th scope="col">Nama Barang</th>
                             <th scope="col">Jumlah</th>
                             <th scope="col">Harga</th>
                             <th scope="col">Total</th>
@@ -48,17 +48,11 @@
                         <tbody>
                             <tr>
                             <th scope="row">1</th>
-                            <td>Rainbow Muffin</td>
+                            <td>18/11/2021</td>
+                            <td>Tepung</td>
                             <td>3</td>
-                            <td>Rp. 40000</td>
-                            <td>Rp. 120000</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">2</th>
-                            <td>Birthday Tart</td>
-                            <td>2</td>
-                            <td>Rp. 50000</td>
-                            <td>Rp. 100000</td>
+                            <td>Rp. 10000</td>
+                            <td>Rp. 30000</td>
                             </tr>
                         </tbody>
                     </table>

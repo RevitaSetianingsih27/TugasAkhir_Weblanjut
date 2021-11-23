@@ -22,7 +22,7 @@
               <div class="card-header">
                 <h3 class="card-title">
                 <i class="fas fa-shopping-cart me-3"></i>
-                  Penjualan Bulan ini
+                  Penjualan Hari ini
                 </h3>
                 <div class="card-tools">
                   <ul class="nav nav-pills ml-auto">

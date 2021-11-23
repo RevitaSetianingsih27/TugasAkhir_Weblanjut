@@ -37,6 +37,8 @@ $routes->get('/incomeBulanan', 'Home::pendapatanBulanan');
 $routes->get('/incomeHarian', 'Home::pendapatanHarian');
 $routes->get('/outcomeBulanan', 'Home::pengeluaranBulanan');
 $routes->get('/outcomeHarian', 'Home::pengeluaranHarian');
+$routes->get('/pendataanKaryawan', 'Home::dataKaryawan');
+$routes->get('/pendataanPengguna', 'Home::dataPengguna');
 
 /*
  * --------------------------------------------------------------------

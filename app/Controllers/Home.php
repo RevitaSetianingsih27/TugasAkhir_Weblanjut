@@ -30,5 +30,13 @@ class Home extends BaseController
     {
         return view('vPengeluaranHarian');
     }
+    public function dataKaryawan()
+    {
+        return view('vDataKaryawan');
+    }
+    public function dataPengguna()
+    {
+        return view('vDataPengguna');
+    }
 
 }

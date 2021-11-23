@@ -21,8 +21,8 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">
-                <i class="fas fa-shopping-cart me-3"></i>
-                  Pengeluaran Bulan ini
+                <i class="nav-icon fas fa-users me-3"></i>
+                  Data Pengguna
                 </h3>
                 <div class="card-tools">
                   <ul class="nav nav-pills ml-auto">
@@ -39,29 +39,17 @@
                         <thead>
                             <tr>
                             <th scope="col">No</th>
-                            <th scope="col">tanggal<th>
-                            <th scope="col">Nama Barang</th>
-                            <th scope="col">Jumlah</th>
-                            <th scope="col">Harga</th>
-                            <th scope="col">Total</th>
+                            <th scope="col">NIK<th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Jabatan</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                             <th scope="row">1</th>
-                            <td>18/11/2021</td>
-                            <td>Tepung</td>
-                            <td>3</td>
-                            <td>Rp. 10000</td>
-                            <td>Rp. 30000</td>
-                            </tr>
-                            <tr>
-                            <th scope="row">2</th>
-                            <td>15/11/2021</td>
-                            <td>Baking Soda</td>
-                            <td>2</td>
-                            <td>Rp. 5000</td>
-                            <td>Rp. 10000</td>
+                            <td>1721871029</td>
+                            <td>Salsa</td>
+                            <td>Kasir</td>
                             </tr>
                         </tbody>
                     </table>

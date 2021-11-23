@@ -84,13 +84,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
+                 <a href="<?=base_url('/pendataanKaryawan')?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Tabel Data Karyawan</p>
+                  <p>Data Karyawan</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
+                 <a href="<?=base_url('/pendataanPengguna')?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Pengguna</p>
                 </a>
