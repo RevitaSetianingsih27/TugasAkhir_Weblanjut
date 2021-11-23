@@ -9,15 +9,26 @@ class Home extends BaseController
         return view('index');
     }
 
-    public function index2()
+    public function login()
     {
-        return view('index2');
+        return view('vlogin');
     }
 
-    public function index3()
+    public function pendapatanBulanan()
     {
-        return view('index3');
+        return view('vPendapatanBulanan');
+    }
+    public function pendapatanHarian()
+    {
+        return view('vPendapatanHarian');
+    }
+    public function pengeluaranBulanan()
+    {
+        return view('vPengeluaranBulanan');
+    }
+    public function pengeluaranHarian()
+    {
+        return view('vPengeluaranHarian');
     }
 
-    
 }

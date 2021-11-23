@@ -21,27 +21,67 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">
-                  <i class="fas fa-chart-pie mr-1"></i>
-                  Data Penjualan
+                <i class="fas fa-chart-line me-3"></i>
+                  Overview
                 </h3>
-                <div class="card-tools">
-                  <ul class="nav nav-pills ml-auto">
-                    <li class="nav-item">
-                      <a href="#" class="nav-link active" data-toggle="tab"><i class="fas fa-plus">Tambah data</i></a>
-                    </li>
-                  </ul>
-                </div>
               </div><!-- /.card-header -->
               <div class="card-body">
                 <div class="tab-content p-0">
-                  <!-- Morris chart - Sales -->
-                  <div class="chart tab-pane active" id="revenue-chart"
-                       style="position: relative; height: 450px;">
-                      <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>
-                   </div>
-                  <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;">
-                    <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
-                  </div>
+                  <div class="container-fluid d-flex flex-row">
+                    <!-- Status Box (Overview) -->
+                    <div class="col-lg-3 col-6">
+                      <!-- small box -->
+                      <div class="small-box bg-info">
+                        <div class="inner">
+                          <h3>150</h3>
+                          <p>Kue Terjual Bulan ini</p>
+                        </div>
+                        <div class="icon">
+                          <i class="ion ion-bag"></i>
+                        </div>
+                        <a href="<?=base_url('/incomeBulanan')?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                      <!-- small box -->
+                      <div class="small-box bg-danger">
+                        <div class="inner">
+                          <h3>Rp.300000</h3>
+                          <p>Pengeluaran Bulan ini</p>
+                        </div>
+                        <div class="icon">
+                          <i class="ion ion-cash"></i>
+                        </div>
+                        <a href="<?=base_url('/outcomeBulanan')?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                      <!-- small box -->
+                      <div class="small-box bg-success">
+                        <div class="inner">
+                          <h3>500</h3>
+                          <p>Pengguna Terdaftar</p>
+                        </div>
+                        <div class="icon">
+                          <i class="ion ion-ios-people"></i>
+                        </div>
+                        <a href="<?=base_url('/outcomeBulanan')?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                      <!-- small box -->
+                      <div class="small-box bg-secondary">
+                        <div class="inner">
+                          <h3>20</h3>
+                          <p>Karyawan Bekerja</p>
+                        </div>
+                        <div class="icon">
+                          <i class="ion ion-ios-people"></i>
+                        </div>
+                        <a href="<?=base_url('/outcomeBulanan')?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                      </div>
+                    </div>
+                  </div><!-- end Stat Box -->
                 </div>
               </div><!-- /.card-body -->
             </div>
