@@ -84,13 +84,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                 <a href="<?=base_url('/pendataanKaryawan')?>" class="nav-link">
+                 <a href="<?=base_url('/dataKaryawan')?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Karyawan</p>
                 </a>
               </li>
               <li class="nav-item">
-                 <a href="<?=base_url('/pendataanPengguna')?>" class="nav-link">
+                 <a href="<?=base_url('/dataPengguna')?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Pengguna</p>
                 </a>

@@ -9,34 +9,74 @@ class Home extends BaseController
         return view('index');
     }
 
+    public function contact()
+    {
+        return view('vContact');
+    }
+
     public function login()
     {
         return view('vlogin');
     }
 
-    public function pendapatanBulanan()
+    public function penjualanBulanan()
     {
-        return view('vPendapatanBulanan');
+        return view('vPenjualanBulanan');
     }
-    public function pendapatanHarian()
+    
+    public function penjualanHarian()
     {
-        return view('vPendapatanHarian');
+        return view('vPenjualanHarian');
     }
+
     public function pengeluaranBulanan()
     {
         return view('vPengeluaranBulanan');
     }
+    
     public function pengeluaranHarian()
     {
         return view('vPengeluaranHarian');
     }
+    
     public function dataKaryawan()
     {
         return view('vDataKaryawan');
     }
+    
     public function dataPengguna()
     {
         return view('vDataPengguna');
+    }
+    
+    public function tDataJualHarian()
+    {
+        return view('vTambahDataPenjualanHarian');
+    }
+    
+    public function tDataJualBulanan()
+    {
+        return view('vTambahDataPenjualanBulanan');
+    }
+    
+    public function tDataKeluarHarian()
+    {
+        return view('vTambahDataPengeluaranHarian');
+    }
+    
+    public function tDataKeluarBulanan()
+    {
+        return view('vTambahDataPengeluaranBulanan');
+    }
+    
+    public function tDataKaryawan()
+    {
+        return view('vTambahDataKaryawan');
+    }
+    
+    public function tDataPengguna()
+    {
+        return view('vTambahDataPengguna');
     }
 
 }

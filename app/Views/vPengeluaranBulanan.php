@@ -20,14 +20,14 @@
             <!-- Custom tabs (Charts with tabs)-->
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">
+                <h3 class="card-title mt-1">
                 <i class="fas fa-shopping-cart me-3"></i>
                   Pengeluaran Bulan ini
                 </h3>
                 <div class="card-tools">
                   <ul class="nav nav-pills ml-auto">
                     <li class="nav-item">
-                      <a href="#" class="nav-link active" data-toggle="tab"><i class="fas fa-plus">Tambah data</i></a>
+                      <a href="/insertPengeluaranBulanan" class="btn btn-primary"><i class="fas fa-plus me-2"></i>Tambah data</a>
                     </li>
                   </ul>
                 </div>
@@ -35,33 +35,44 @@
               <div class="card-body">
                 <div class="tab-content p-0">
                   <div class="container-fluid d-flex flex-row">
-                    <table class="table">
+                    <table class="table" style="text-align:center">
                         <thead>
                             <tr>
                             <th scope="col">No</th>
-                            <th scope="col">tanggal<th>
+                            <th scope="col">Tanggal<th>
                             <th scope="col">Nama Barang</th>
                             <th scope="col">Jumlah</th>
                             <th scope="col">Harga</th>
                             <th scope="col">Total</th>
+                            <th scope="col">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <th scope="row">1</th>
-                            <td>18/11/2021</td>
-                            <td>Tepung</td>
-                            <td>3</td>
-                            <td>Rp. 10000</td>
-                            <td>Rp. 30000</td>
+                              <th scope="row">1</th>
+                              <td>18/11/2021</td>
+                              <td></td>
+                              <td>Tepung</td>
+                              <td>3</td>
+                              <td>Rp 7500</td>
+                              <td>Rp 22500</td>
+                              <td>
+                              <a href="#" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
+                              <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
+                            </td>
                             </tr>
                             <tr>
-                            <th scope="row">2</th>
-                            <td>15/11/2021</td>
-                            <td>Baking Soda</td>
-                            <td>2</td>
-                            <td>Rp. 5000</td>
-                            <td>Rp. 10000</td>
+                              <th scope="row">2</th>
+                              <td>21/11/2021</td>
+                              <td></td>
+                              <td>Baking Soda</td>
+                              <td>2</td>
+                              <td>Rp 5000</td>
+                              <td>Rp 10000</td>
+                              <td>
+                              <a href="#" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
+                              <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
+                            </td>
                             </tr>
                         </tbody>
                     </table>
