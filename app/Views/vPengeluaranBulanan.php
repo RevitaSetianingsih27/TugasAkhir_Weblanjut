@@ -57,7 +57,7 @@
                               <td>Rp 7500</td>
                               <td>Rp 22500</td>
                               <td>
-                              <a href="#" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
+                              <a href="/editPengeluaranBulanan" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
                               <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
                             </td>
                             </tr>
@@ -70,7 +70,7 @@
                               <td>Rp 5000</td>
                               <td>Rp 10000</td>
                               <td>
-                              <a href="#" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
+                              <a href="/editPengeluaranBulanan" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
                               <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
                             </td>
                             </tr>

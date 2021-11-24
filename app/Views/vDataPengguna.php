@@ -52,7 +52,7 @@
                             <td>085707071414</td>
                             <td>Jl. Cempaka Raya No. 24 Bandarlampung</td>
                             <td>
-                              <a href="#" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
+                              <a href="/editDataPengguna" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
                               <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
                             </td>
                             </tr>

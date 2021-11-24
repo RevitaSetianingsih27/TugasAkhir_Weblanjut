@@ -54,7 +54,7 @@
                             <td>Rp. 40000</td>
                             <td>Rp. 120000</td>
                             <td>
-                              <a href="#" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
+                              <a href="/editPenjualanHarian" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
                               <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
                             </td>
                             </tr>
@@ -65,7 +65,7 @@
                             <td>Rp. 50000</td>
                             <td>Rp. 100000</td>
                             <td>
-                              <a href="#" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
+                              <a href="/editPenjualanHarian" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
                               <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
                             </td>
                             </tr>

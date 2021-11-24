@@ -46,6 +46,12 @@ $routes->get('/insertPengeluaranHarian', 'Home::tDataKeluarHarian');
 $routes->get('/insertPengeluaranBulanan', 'Home::tDataKeluarBulanan');
 $routes->get('/insertDataKaryawan', 'Home::tDataKaryawan');
 $routes->get('/insertDataPengguna', 'Home::tDataPengguna');
+$routes->get('/editPenjualanHarian', 'Home::eDataJualHarian');
+$routes->get('/editPenjualanBulanan', 'Home::eDataJualBulanan');
+$routes->get('/editPengeluaranHarian', 'Home::eDataKeluarHarian');
+$routes->get('/editPengeluaranBulanan', 'Home::eDataKeluarBulanan');
+$routes->get('/editDataKaryawan', 'Home::eDataKaryawan');
+$routes->get('/editDataPengguna', 'Home::eDataPengguna');
 
 
 /*

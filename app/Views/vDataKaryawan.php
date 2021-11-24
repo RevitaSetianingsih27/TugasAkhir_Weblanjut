@@ -52,7 +52,7 @@
                             <td>085505051112</td>
                             <td>Kasir</td>
                             <td>
-                              <a href="#" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
+                              <a href="/editDataKaryawan" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
                               <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
                             </td>
                             </tr>

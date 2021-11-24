@@ -78,5 +78,34 @@ class Home extends BaseController
     {
         return view('vTambahDataPengguna');
     }
+    public function eDataJualHarian()
+    {
+        return view('vEditDataPenjualanHarian');
+    }
+    
+    public function eDataJualBulanan()
+    {
+        return view('vEditDataPenjualanBulanan');
+    }
+    
+    public function eDataKeluarHarian()
+    {
+        return view('vEditDataPengeluaranHarian');
+    }
+    
+    public function eDataKeluarBulanan()
+    {
+        return view('vEditDataPengeluaranBulanan');
+    }
+    
+    public function eDataKaryawan()
+    {
+        return view('vEditDataKaryawan');
+    }
+    
+    public function eDataPengguna()
+    {
+        return view('vEditDataPengguna');
+    }
 
 }
