@@ -44,7 +44,7 @@
   <body class="text-center" style="background-color:pink">
       <br><br>
       <div class="container-fluid d-flex flex-row justify-content-center p-5">
-          <div class="card w-25 p-5" style="background-color:white">
+          <div class="card w-25 p-5" style="background-color:#ff8ca0">
           <form class="form-signin">
             <img class="mb-4" src="/assets/images/logo.png" alt="" width="72" height="72">
             <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
