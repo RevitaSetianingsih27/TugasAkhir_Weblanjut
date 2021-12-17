@@ -34,12 +34,12 @@
               </div><!-- /.card-header -->
               <div class="card-body">
                 <div class="tab-content p-0">
-                  <div class="container-fluid d-flex flex-row">
-                    <table class="table" style="text-align:center">
+                  <div class="container-fluid">
+                    <table id="dataTable" class="table" style="text-align:center">
                         <thead>
                             <tr>
                             <th scope="col">No</th>
-                            <th scope="col">Tanggal<th>
+                            <th scope="col">Tanggal</th>
                             <th scope="col">Nama Kue</th>
                             <th scope="col">Jumlah</th>
                             <th scope="col">Harga</th>
@@ -48,32 +48,22 @@
                             </tr>
                         </thead>
                         <tbody>
+                          <?php
+                            $i = 1 ;
+                           foreach ($data as $row) : ?>
                             <tr>
-                            <th scope="row">1</th>
-                            <td>18/11/2021</td>
-                            <td></td>
-                            <td>Rainbow Muffin</td>
-                            <td>3</td>
-                            <td>Rp. 40000</td>
-                            <td>Rp. 120000</td>
+                            <th scope="row"><?=$i++?></th>
+                            <td><?=$row['tanggal']?></td>
+                            <td><?=$row['nama_barang']?></td>
+                            <td><?=$row['jumlah']?></td>
+                            <td>Rp. <?=$row['harga']?></td>
+                            <td>Rp. <?=$row['total']?></td>
                             <td>
                               <a href="/editPenjualanBulanan" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
-                              <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
+                              <a href="#" class="btn btn-danger" onClick="hapus('<?=base_url("/jual/delete/b/".$row['id'])?>')"><i class="fas fa-trash"></i>Hapus</a>
                             </td>
                             </tr>
-                            <tr>
-                            <th scope="row">2</th>
-                            <td>15/11/2021</td>
-                            <td></td>
-                            <td>Birthday Tart</td>
-                            <td>2</td>
-                            <td>Rp. 50000</td>
-                            <td>Rp. 100000</td>
-                            <td>
-                              <a href="/editPenjualanBulanan" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
-                              <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
-                            </td>
-                            </tr>
+                            <?php endforeach ?>
                         </tbody>
                     </table>
                 </div>

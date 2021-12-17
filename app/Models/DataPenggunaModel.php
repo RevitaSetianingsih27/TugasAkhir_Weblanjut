@@ -8,7 +8,7 @@ class DataPenggunaModel extends Model
 {
     protected $table                = 'datapengguna';
 	protected $primaryKey           = 'id';
-	protected $allowedFields        = ['nama', 'nomor_hp', 'alamat'];
+	protected $allowedFields        = ['nama', 'nomor_hp', 'alamat','created_at','updated_at'];
 	protected $useTimestamps        = true;
 
 	public function getDataPengguna($id = false){

@@ -6,9 +6,9 @@ use CodeIgniter\Model;
 
 class PengeluaranHarianModel extends Model
 {
-    protected $table                = 'penngeluaranharian';
+    protected $table                = 'pengeluaranharian';
 	protected $primaryKey           = 'id';
-	protected $allowedFields        = ['nama_barang', 'jumlah', 'harga', 'total'];
+	protected $allowedFields        = ['nama_barang', 'jumlah', 'harga', 'total','created_at','updated_at'];
 	protected $useTimestamps        = true;
 
 	public function getPengeluaranHarian($id = false){

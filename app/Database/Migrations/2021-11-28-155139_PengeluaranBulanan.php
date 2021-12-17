@@ -16,7 +16,7 @@ class PengeluaranBulanan extends Migration
 				'auto_increment'=> true
 			],
             'tanggal'=>[
-				'type'=> 'DATETIME',
+				'type'=> 'DATE',
                 'null' => true,
 			],
 			'nama_barang'=>[
@@ -24,16 +24,16 @@ class PengeluaranBulanan extends Migration
 				'constraint'=> 100,
 			],
 			'jumlah' => [
-				'type' => 'VARCHAR',
-				'constraint' => 100,
+				'type' => 'INT',
+				'constraint' => 30,
 			],
 			'harga'=>[
-				'type'=> 'VARCHAR',
-				'constraint'=> 100,
+				'type'=> 'INT',
+				'constraint'=> 30,
 			],
 			'total'=>[
-				'type'=>'VARCHAR',
-				'constraint'=> 150,
+				'type'=>'INT',
+				'constraint'=> 11,
 			]
 			
 		]);

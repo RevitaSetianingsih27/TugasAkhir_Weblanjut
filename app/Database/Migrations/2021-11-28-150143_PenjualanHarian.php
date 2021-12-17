@@ -20,16 +20,16 @@ class PenjualanHarian extends Migration
 				'constraint'=> 100,
 			],
 			'jumlah' => [
-				'type' => 'VARCHAR',
-				'constraint' => 100,
+				'type' => 'INT',
+				'constraint' => 30,
 			],
 			'harga'=>[
-				'type'=> 'VARCHAR',
-				'constraint'=> 100,
+				'type'=> 'INT',
+				'constraint'=> 30,
 			],
 			'total'=>[
-				'type'=>'VARCHAR',
-				'constraint'=> 150,
+				'type'=>'INT',
+				'constraint'=> 11,
 			]
 			
 		]);

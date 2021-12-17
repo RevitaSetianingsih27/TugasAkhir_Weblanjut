@@ -30,25 +30,28 @@
                         <div class="card-body">
                             <div class="tab-content p-0">
                                 <div class="container-fluid d-flex">
-                                    <form action="#" method="post">
+                                    <form class="w-100"action="/saveJualH" method="post">
                                         <div class="mb-3">
                                             <label for="exampleInputEmail1" class="form-label">Nama Kue</label>
-                                            <input type="email" class="form-control" autofocus id="exampleInputEmail1" size="75%">
+                                            <input type="text" name="nama" class="form-control" autofocus id="exampleInputEmail1">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputPassword1" class="form-label">Jumlah</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                            <input type="number" name="jumlah" class="form-control" id="jumlah" >
                                         </div>
-                                        <div class="mb-3">
+                                        <div class="mb-3 d-flex flex-column">
                                             <label for="exampleInputPassword1" class="form-label">Harga</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                            <div class="d-flex flex-row">
+                                                <span class="mx-3">Rp.</span><input type="number" name="harga" class="form-control" id="harga" >
+                                            </div>
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputPassword1" class="form-label">Total</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                            <div class="d-flex flex-row">
+                                                <span class="mx-3">Rp.</span><input type="number" name="total" class="form-control" id="total" disabled>
+                                            </div>
                                         </div>
                                         <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"> Submit</i></button>
-                                    </form>
                                     </form>
                                 </div>
                             </div><!-- /.card-body -->

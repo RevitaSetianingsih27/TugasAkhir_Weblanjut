@@ -8,7 +8,7 @@ class DataKaryawanModel extends Model
 {
     protected $table                = 'datakaryawan';
 	protected $primaryKey           = 'id';
-	protected $allowedFields        = ['nama', 'nomor_hp', 'jabatan'];
+	protected $allowedFields        = ['nama', 'nomor_hp', 'jabatan','created_at','updated_at'];
 	protected $useTimestamps        = true;
 
 	public function getDataKaryawan($id = false){

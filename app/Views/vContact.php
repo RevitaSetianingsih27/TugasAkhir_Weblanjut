@@ -37,7 +37,7 @@
                                         </ul>
                                     </div>
                                     <div class="col-5 text-center">
-                                        <img src="assets/images/admin.jpg" alt="user-avatar" class="img-circle img-fluid">
+                                        <img src="assets/images/doni.png" alt="user-avatar" class="img-circle img-fluid">
                                     </div>
                                 </div>
                             </div>

@@ -31,9 +31,11 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
 $routes->get('/contact', 'Home::contact');
 $routes->get('/login', 'Home::login');
+$routes->get('/', 'Home::admin');
+$routes->add('/dologin', 'Home::dologin');
 $routes->get('/incomeBulanan', 'Home::penjualanBulanan');
 $routes->get('/incomeHarian', 'Home::penjualanHarian');
 $routes->get('/outcomeBulanan', 'Home::pengeluaranBulanan');
@@ -42,16 +44,35 @@ $routes->get('/dataKaryawan', 'Home::dataKaryawan');
 $routes->get('/dataPengguna', 'Home::dataPengguna');
 $routes->get('/insertPenjualanHarian', 'Home::tDataJualHarian');
 $routes->get('/insertPenjualanBulanan', 'Home::tDataJualBulanan');
+$routes->add('/saveJualB', 'Home::save_JualB');
+$routes->add('/saveJualH', 'Home::save_JualH');
+$routes->add('/saveKeluarH', 'Home::save_KeluarH');
+$routes->add('/saveKeluarB', 'Home::save_KeluarB');
+$routes->add('/savePengguna', 'Home::save_pengguna');
+$routes->add('/saveKaryawan', 'Home::save_karyawan');
 $routes->get('/insertPengeluaranHarian', 'Home::tDataKeluarHarian');
 $routes->get('/insertPengeluaranBulanan', 'Home::tDataKeluarBulanan');
 $routes->get('/insertDataKaryawan', 'Home::tDataKaryawan');
 $routes->get('/insertDataPengguna', 'Home::tDataPengguna');
-$routes->get('/editPenjualanHarian', 'Home::eDataJualHarian');
-$routes->get('/editPenjualanBulanan', 'Home::eDataJualBulanan');
-$routes->get('/editPengeluaranHarian', 'Home::eDataKeluarHarian');
-$routes->get('/editPengeluaranBulanan', 'Home::eDataKeluarBulanan');
-$routes->get('/editDataKaryawan', 'Home::eDataKaryawan');
-$routes->get('/editDataPengguna', 'Home::eDataPengguna');
+$routes->add('/editPenjualanHarian/(:num)', 'Home::eDataJualHarian/$1');
+$routes->add('/editPenjualanBulanan/(:num)', 'Home::eDataJualBulanan/$1');
+$routes->add('/editPengeluaranHarian/(:num)', 'Home::eDataKeluarHarian/$1');
+$routes->add('/editPengeluaranBulanan/(:num)', 'Home::eDataKeluarBulanan/$1');
+$routes->add('/editDataKaryawan/(:num)', 'Home::eDataKaryawan/$1');
+$routes->add('/editDataPengguna/(:num)', 'Home::eDataPengguna/$1');
+$routes->add('jual/delete/b/(:num)', 'Home::hapus_jualB/$1');
+$routes->add('jual/delete/h/(:num)', 'Home::hapus_jualH/$1');
+$routes->add('keluar/delete/b/(:num)', 'Home::hapus_keluarB/$1');
+$routes->add('keluar/delete/h/(:num)', 'Home::hapus_keluarH/$1');
+$routes->add('pengguna/delete/(:num)', 'Home::hapus_pengguna/$1');
+$routes->add('karyawan/delete/(:num)', 'Home::hapus_karyawan/$1');
+$routes->add('keluar/update/b', 'Home::update_KeluarB');
+$routes->add('keluar/update/h', 'Home::update_KeluarH');
+$routes->add('jual/update/h', 'Home::update_JualH');
+$routes->add('jual/update/b', 'Home::update_JualB');
+$routes->add('pengguna/update', 'Home::update_pengguna');
+$routes->add('karyawan/update', 'Home::update_karyawan');
+
 
 
 /*

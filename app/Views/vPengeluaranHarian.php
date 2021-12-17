@@ -55,7 +55,7 @@
                             <td>Rp. 30000</td>
                             <td>
                               <a href="/editPengeluaranHarian" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
-                              <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
+                              <a href="#" onclick="hapus('<?=base_url("/jual/delete/b/". $row['id'])?>')" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
                             </td>
                             </tr>
                         </tbody>

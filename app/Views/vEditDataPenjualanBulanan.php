@@ -31,28 +31,28 @@
                             <div class="tab-content p-0">
                                 <div class="container-fluid d-flex">
                                     <form action="#" method="post">
+                                    <input type="hidden" name="id" value="<?=$data['id']?>">
                                     <div class="mb-3">
                                             <label for="exampleInputEmail1" class="form-label">Tanggal</label>
-                                            <input type="email" class="form-control" autofocus id="exampleInputEmail1" size="75%">
+                                            <input type="date" class="form-control"  autofocus id="exampleInputEmail1" size="75%" value="<?=$data['tanggal']?>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputEmail1" class="form-label">Nama Kue</label>
-                                            <input type="email" class="form-control" autofocus id="exampleInputEmail1">
+                                            <input type="text" class="form-control" autofocus id="exampleInputEmail1" value="<?=$data['nama_barang']?>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputPassword1" class="form-label">Jumlah</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                            <input type="text" class="form-control" id="exampleInputPassword1" value="<?=$data['jumlah']?>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputPassword1" class="form-label">Harga</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                            <input type="text" class="form-control" id="exampleInputPassword1" value="<?=$data['harga']?>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputPassword1" class="form-label">Total</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                            <input type="number" class="form-control" id="exampleInputPassword1" value="<?=$data['total']?>">
                                         </div>
                                         <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"> Submit</i></button>
-                                    </form>
                                     </form>
                                 </div>
                             </div><!-- /.card-body -->

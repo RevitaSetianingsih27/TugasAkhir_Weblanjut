@@ -34,8 +34,8 @@
               </div><!-- /.card-header -->
               <div class="card-body">
                 <div class="tab-content p-0">
-                  <div class="container-fluid d-flex flex-row">
-                    <table class="table" style="text-align:center">
+                  <div class="container-fluid">
+                    <table id="dataTable" class="table" style="text-align:center">
                         <thead>
                             <tr>
                             <th scope="col">No</th>
@@ -46,16 +46,19 @@
                             </tr>
                         </thead>
                         <tbody>
+                          <?php $i=1;
+                          foreach($data as $row) : ?>
                             <tr>
-                            <th scope="row">1</th>
-                            <td>Sisri</td>
-                            <td>085505051112</td>
-                            <td>Kasir</td>
+                            <th scope="row">$i++</th>
+                            <td><?=$row['nama']?></td>
+                            <td><?=$row['no_hp']?></td>
+                            <td><?=$row['jabatan']?></td>
                             <td>
-                              <a href="/editDataKaryawan" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
-                              <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
+                              <a href="<?=base_url('/editDataKaryawan/').$row['id']?>" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
+                              <a href="#" onclick="hapus('<?=base_url('/karyawan/delete').$row['id']?>')" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
                             </td>
                             </tr>
+                            <?php endforeach ?>
                         </tbody>
                     </table>
                 </div>

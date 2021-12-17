@@ -44,22 +44,60 @@
   <body class="text-center" style="background-color:pink">
       <br><br>
       <div class="container-fluid d-flex flex-row justify-content-center p-5">
-          <div class="card w-25 p-5" style="background-color:#ff8ca0">
-          <form class="form-signin">
+        <?php 
+          if(session()->getFlashdata('msg')):?>
+              <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+        <?php endif;?>
+          <div class="card w-25 p-5" style="background-color:white">
+          <form class="form-signin" action="/dologin" method="post" onsubmit="return do_login();">
             <img class="mb-4" src="/assets/images/logo.png" alt="" width="72" height="72">
             <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <label for="inputEmail" class="sr-only">Username</label>
+            <input type="text" id="username" class="form-control" name="username" placeholder="Username" required autofocus>
             <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            <div class="checkbox mb-3">
-                <label>
-                <input type="checkbox" value="remember-me"> Remember me
-                </label>
-            </div>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         </form>
           </div>
       </div>
 </body>
+<script type="text/javascript">
+function do_login()
+{
+ var email=$("#username").val();
+ var pass=$("#password").val();
+ if(email!="" && pass!="")
+ {
+  $("#loading_spinner").css({"display":"block"});
+  $.ajax
+  ({
+  type:'post',
+  url:'<?= base_url("/doLogin")?>',
+  data:{
+   do_login:"do_login",
+   username:username,
+   password:pass
+  },
+  success:function(response) {
+  if(response=="success")
+  {
+    window.location.href="index.php";
+  }
+  else
+  {
+    $("#loading_spinner").css({"display":"none"});
+    alert("Wrong Details");
+  }
+  }
+  });
+ }
+
+ else
+ {
+  alert("Please Fill All The Details");
+ }
+
+ return false;
+}
+</script>
 </html>

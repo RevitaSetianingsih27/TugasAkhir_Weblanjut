@@ -46,6 +46,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                          <?php foreach($data as $row): ?>
                             <tr>
                             <th scope="row">1</th>
                             <td>Juned</td>
@@ -53,9 +54,10 @@
                             <td>Jl. Cempaka Raya No. 24 Bandarlampung</td>
                             <td>
                               <a href="/editDataPengguna" class="btn btn-warning"><i class="fas fa-edit"></i>Edit</a>
-                              <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
+                              <a href="#" onclick="hapus('<?=base_url('pengguna/delete/').$row['']?>')" class="btn btn-danger"><i class="fas fa-trash"></i>Hapus</a>
                             </td>
                             </tr>
+                            <?php endforeach?>
                         </tbody>
                     </table>
                 </div>

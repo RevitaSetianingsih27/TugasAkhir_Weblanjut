@@ -14,6 +14,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/assets/adminlte/plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="/assets/adminlte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="/assets/adminlte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="/assets/adminlte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Tempusdominus Bootstrap 4 -->
@@ -59,7 +63,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="/assets/adminlte/plugins/jquery/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="/assets/adminlte/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -92,5 +96,64 @@
 <script src="/assets/adminlte/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/assets/adminlte/dist/js/pages/dashboard.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="/assets/adminlte/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/assets/adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="/assets/adminlte/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/assets/adminlte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="/assets/adminlte/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/assets/adminlte/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="/assets/adminlte/plugins/jszip/jszip.min.js"></script>
+<script src="/assets/adminlte/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="/assets/adminlte/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="/assets/adminlte/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="/assets/adminlte/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="/assets/adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- sweet alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  $(function () {
+  $('#dataTable').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+<script>
+$( "input#harga" ).keyup(function() {
+    var value1 = $( "#jumlah" ).val();
+    var value2 = $( this ).val();    
+    $( "input#total" ).val( value1*value2 );
+  }).keyup();
+
+  $( "input#jumlah" ).keyup(function() {
+    var value1 = $( "#harga" ).val();
+    var value2 = $( this ).val();    
+    $( "input#total" ).val( value1*value2 );
+  }).keyup();
+
+function hapus(x){
+  swal({
+  title: "Are you sure?",
+  text: "Once deleted, you will not be able to recover this data!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    window.location.href = x
+  } else {
+    swal("Your data is safe!");
+  }
+});
+}
+</script>
+
 </body>
 </html>
